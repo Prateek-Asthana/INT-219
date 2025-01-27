@@ -1,0 +1,35 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 250 px 1fr;
+    height:100vh;
+}
+
+.header{
+    grid-area: header;
+    background-color: aquamarine;
+    color: azure;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: azure;
+    padding: 1rem;
+    border-right: 1px solid salmon;
+
+}
+.main-content{
+    grid-area: ;
+}
